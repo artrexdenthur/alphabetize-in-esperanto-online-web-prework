@@ -34,7 +34,7 @@ end
 
 def alphabetize(array)
   es = esperanto_sorter
-  array = clean_combined_diacritics(array)
+  array = array.map { |s| clean_combined_diacritics(s) }
   array.sort_by { |w| puts w.chars.map { |c| es.index(c) } }
 end
 puts alphabetize(["ĉa", "ĉb", "c\u0302au", "c\u0302bu"])
