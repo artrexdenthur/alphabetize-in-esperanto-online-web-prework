@@ -16,4 +16,4 @@ def alphabetize(array)
   array.sort_by { |w| w.chars.map { |c| es[c] } }
 end
 
-puts alphabetize(["ĉa", "ĉb", "c\u0302a", "c\u0302b"])
+puts alphabetize(["ĉa", "ĉb", "c\u0302au", "c\u0302bu"])
