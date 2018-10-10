@@ -8,6 +8,7 @@ def esperanto_sorter
   ['c','g','h','j','s','u'].each do |c|
     alpha_hash["#{c}\u0302"] = alpha_hash[c] + 1
   end
+  alpha_hash
 end
 
 def alphabetize(array)
