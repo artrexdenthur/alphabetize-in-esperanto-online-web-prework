@@ -12,7 +12,7 @@ def esperanto_sorter
 end
 
 def esperanto_combined_diacritics
-    esperanto_diacritics = {
+  {
     "ĉ" => "c\u0302"
     "ĝ" => "g\u0302"
     "ĥ" => "h\u0302"
@@ -23,14 +23,10 @@ def esperanto_combined_diacritics
 end
 
 def clean_combined_diacritics(string)
-  esperanto_diacritics = {
-    "ĉ" => "c\u0302"
-    "ĝ" => "g\u0302"
-    "ĥ" => "h\u0302"
-    "ĵ" => "j\u0302"
-    "ŝ" => "s\u0302"
-    "ŭ" => "u\u0302"
-  }
+  ecd = esperanto_combined_diacritics
+  ecd.each do |c, c_com|
+    string.gsub()
+end
   
 
 def alphabetize(array)
