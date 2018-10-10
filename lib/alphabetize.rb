@@ -1,6 +1,5 @@
 def esperanto_sorter
   # code here
-  const esperanto_alphabet
   esperanto_alphabet = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   alpha_hash = {}
   esperanto_alphabet.chars.each do |c|
