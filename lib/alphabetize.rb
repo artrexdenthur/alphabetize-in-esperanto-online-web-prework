@@ -11,10 +11,27 @@ def esperanto_sorter
   alpha_hash
 end
 
+def esperanto_combined_diacritics
+    esperanto_diacritics = {
+    "ĉ" => "c\u0302"
+    "ĝ" => "g\u0302"
+    "ĥ" => "h\u0302"
+    "ĵ" => "j\u0302"
+    "ŝ" => "s\u0302"
+    "ŭ" => "u\u0302"
+  }
+end
+
 def clean_combined_diacritics(string)
   esperanto_diacritics = {
-    ĉĝĥĵŝ
+    "ĉ" => "c\u0302"
+    "ĝ" => "g\u0302"
+    "ĥ" => "h\u0302"
+    "ĵ" => "j\u0302"
+    "ŝ" => "s\u0302"
+    "ŭ" => "u\u0302"
   }
+  
 
 def alphabetize(array)
   es = esperanto_sorter
