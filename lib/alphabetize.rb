@@ -13,7 +13,7 @@ end
 
 def alphabetize(array)
   es = esperanto_sorter
-  array.each { |w| w.chars.map { |c| es[c] } }
+  array.each { |w| puts w.chars.map { |c| es[c] } }
 end
 
 puts esperanto_sorter["ĉ"]
