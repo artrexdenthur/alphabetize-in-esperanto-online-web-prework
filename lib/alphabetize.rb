@@ -34,6 +34,7 @@ end
 
 def alphabetize(array)
   es = esperanto_sorter
+  array = clean_combined_diacritics(array)
   array.each { |w| puts w.chars.map { |c| es.index(c) } }
 end
 
