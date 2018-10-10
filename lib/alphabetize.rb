@@ -11,6 +11,11 @@ def esperanto_sorter
   alpha_hash
 end
 
+def clean_combined_diacritics(string)
+  esperanto_diacritics = {
+    ĉĝĥĵŝ
+  }
+
 def alphabetize(array)
   es = esperanto_sorter
   array.each { |w| puts w.chars.map { |c| es[c] } }
