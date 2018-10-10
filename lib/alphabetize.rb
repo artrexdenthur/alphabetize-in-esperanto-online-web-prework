@@ -16,7 +16,7 @@ def alphabetize(array)
   array.each { |w| puts w.chars.map { |c| es[c] } }
 end
 
-puts "c\u0302au".chars
+puts "c\u0302au"
 # alphabetize(["ĉa", "ĉb", "c\u0302au", "c\u0302bu"])
 =begin
 puts esperanto_sorter["ĉ"]
