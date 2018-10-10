@@ -1,10 +1,10 @@
 def esperanto_sorter
   # code here
-  const ESPERANTO_ALPHABET
-  ESPERANTO_ALPHABET = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  const esperanto_alphabet
+  esperanto_alphabet = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   alpha_hash = {}
-  ESPERANTO_ALPHABET.chars.each do |c|
-    alpha_hash[c] = ESPERANTO_ALPHABET.chars.index(c)
+  esperanto_alphabet.chars.each do |c|
+    alpha_hash[c] = esperanto_alphabet.chars.index(c)
   end
   ['c','g','h','j','s','u'].each do |c|
     alpha_hash["#{c}\u0302"] = alpha_hash[c] + 1
