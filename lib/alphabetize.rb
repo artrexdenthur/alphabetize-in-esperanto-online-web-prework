@@ -1,6 +1,7 @@
 def esperanto_sorter
   # code here
   esperanto_alphabet = " abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+=begin
   alpha_hash = {}
   esperanto_alphabet.chars.each do |c|
     alpha_hash[c] = esperanto_alphabet.chars.index(c)
@@ -9,6 +10,7 @@ def esperanto_sorter
     alpha_hash["#{c}\u0302"] = alpha_hash[c] + 1
   end
   alpha_hash
+=end
 end
 
 def esperanto_combined_diacritics
@@ -26,12 +28,13 @@ def clean_combined_diacritics(string)
   ecd = esperanto_combined_diacritics
   ecd.each do |c, c_com|
     string.gsub(c_com, c)
+  end
 end
   
 
 def alphabetize(array)
   es = esperanto_sorter
-  array.each { |w| puts w.chars.map { |c| es[c] } }
+  array.each { |w| puts w.chars.map { |c| es.index(c) } }
 end
 
 puts "c\u0302au".gsub("c\u0302","ĉ")
