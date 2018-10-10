@@ -25,7 +25,7 @@ end
 def clean_combined_diacritics(string)
   ecd = esperanto_combined_diacritics
   ecd.each do |c, c_com|
-    string.gsub()
+    string.gsub(c_com, c)
 end
   
 
